@@ -1,0 +1,88 @@
+/*global*/
+*{
+    margin:0;
+    padding:0;
+}
+img{
+    max-width:100%;
+}
+h1,h2,h3{
+    text-align:center;
+}
+p{
+    line-height: 1.5;
+}
+a{
+    text-decoration: none;
+}
+
+/*utilites*/
+.title {
+    font-weight: 700;
+}
+.container {
+    width: 70%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 30px;
+}
+.btn {
+    display: block;
+    width: 150px;
+    background-color: black;
+    color: white;
+    border: none;
+    padding:10px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.btnv2 {
+    display: block;
+    width: 150px;
+    background-color: rgb(136, 47, 47);
+    color: white;
+    border: none;
+    padding:10px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*header*/
+.site-init{
+    background-image:url(./img/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 350px;
+}
+.site-init h1{
+    font-size: 40px;
+    color:white;
+    font-weight: 400;
+}
+.site-init p{
+    color:white;
+    text-align: center;
+}
+p.subtitle {
+    font-size: 20px;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+
+/*nav*/
+.menu{
+    text-align: center;
+    margin-top: 30px;
+    letter-spacing: 1px;
+}
+/*blog*/
+.blog{
+    border-bottom: 1px solid rgb(142, 66, 66);
+    margin-bottom: 20px;
+}
