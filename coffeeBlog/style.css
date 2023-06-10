@@ -7,13 +7,16 @@ img{
     max-width:100%;
 }
 h1,h2,h3{
-    text-align:center;
+    text-align:left;
 }
 p{
     line-height: 1.5;
 }
 a{
     text-decoration: none;
+}
+body{
+    font-family: 'Cabin', sans-serif;
 }
 
 /*utilites*/
@@ -52,6 +55,30 @@ a{
     margin-top: 10px;
     margin-bottom: 10px;
 }
+.btnv3 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 11px 22px;
+    gap: 10px;
+    
+    position: absolute;
+    width: 130px;
+    height: 48px;
+    left: 160px;
+    top: 820px;
+    background: #E4BC84;
+    width: px;
+    height: 26px;
+
+font-family: 'Alegreya Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+text-transform: uppercase;
+color: #000000;
+
+}
 .flex-container{
     display: flex;
     justify-content: space-around;
@@ -62,26 +89,145 @@ a{
     justify-content: space-between;
     align-items: flex-start;
 }
+.flex2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 14px;
+    width: 300px;
+    height: 45px;
+}
+.headerFlex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 650px;
+    position: absolute;
+    width: 1112px;
+    height: 45px;
+    left: 168px;
+    top: 31px;
+}
+.flex-container-col{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
 .footerbg{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     background-color: black;
-    height: 50px;
+    height: 90px;
+}
+.footerbg2{
+    position: absolute;
+    width: 1440px;
+    height: 186px;
+    left: 0px;
+    top: 1539px;
+    
+    background: #000000;
+}
+.push{
+    margin: 20px;
+}
+.resize{
+    width: 700px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.diffh1{
+    position: absolute;
+    width: 330px;
+    height: 120px;
+    left: 160px;
+    top: 447px;
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+}
+.diffbody{
+    position: absolute;
+    width: 475px;
+    height: 210px;
+    left: 160px;
+    top: 598px;
+    font-family: 'Alegreya Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+}
+.diffbody2{
+    position: absolute;
+width: 475px;
+height: 226px;
+left: 802px;
+top: 1104px;
+
+/* Body */
+
+font-family: 'Alegreya Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 160%;
+}
+.firstpic{
+    position: absolute;
+    width: 360px;
+    height: 501px;
+    left: 920px;
+    top: 403px;
+    background-image: url(./img/coffee_design.png);
+}
+.secondpic{
+    position: absolute;
+    width: 360px;
+    height: 501px;
+    left: 160px;
+top: 975px;
+    background: url(./img/coffeePour.png);
+}
+.diffh1v2{
+    position: absolute;
+    width: 348px;
+    height: 60px;
+    left: 802px;
+    top: 1019px;
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
 }
 
 /*header*/
 .site-init{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: start;
     background-image:url(./img/banner.jpg);
     background-position: center;
     background-size: cover;
     height: 350px;
 }
-.site-init h1{
+.brewlife-header{
+    /* position: absolute; */
+    width: 1440px;
+    height: 346px;
+    left: 0px;
+    top: 0px;
+    background: url(img/beanHeader.png);
+    border-radius: 0px 0px 70px 70px;
+}
+.site-init h1, .site-contact h1{
     font-size: 40px;
     color:white;
     font-weight: 400;
@@ -95,16 +241,83 @@ p.subtitle {
     word-spacing: 2px;
     letter-spacing: 1px;
 }
+.space{
+    margin-top: 80px;
+}
 
 /*nav*/
 .menu{
     color: azure;
-    margin-right: 30px;
+    margin-top: 30px;
     margin-bottom: 20px;
-    align-items: space-between;
+    width: 400px;
+}
+.menu a{
+    color: azure;
+    margin-right: 30px;
 }
 /*blog*/
 .blog{
     border-bottom: 1px solid rgb(142, 66, 66);
     margin-bottom: 20px;
+}
+
+/* About */
+
+/* contact */
+.site-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(./img/coffeemilk.jpg);
+    height: 15vh;
+}
+
+/* form */
+.contact-img{
+    width:100;
+}
+.contact-form{
+    width:70%;
+    background-color: white;
+    padding: 10px;
+    margin-top: -80px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.form-field{
+    padding: 5px;
+    margin-bottom: 10px;
+}
+label{
+    display: inline-block;
+    width: 100px;
+}
+.imput-control, textarea{
+    border: 1px solid #e1e1e1;
+    width: 80%;
+    padding: 3px;
+}
+/* footer */
+.footerflex{
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 650px;
+position: absolute;
+width: 1112px;
+height: 45px;
+left: 137px;
+top: 69px;
+}
+.logoflex{
+    display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 14px;
+
+width: 220px;
+height: 45px;
 }
